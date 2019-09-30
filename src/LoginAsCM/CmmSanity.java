@@ -23,7 +23,7 @@ public class CmmSanity {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		String actualUrl = driver.getCurrentUrl();
-		System.out.println("the current url is" + actualUrl);
+		System.out.println("the current url is :" + actualUrl);
 		System.out.println("launch browser and open url");
 	}
 	
@@ -63,7 +63,7 @@ public class CmmSanity {
 		driver.findElement(By.id("email")).sendKeys("qasummitech@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("password");
 		driver.findElement(By.xpath("/html/body/app-root/app-account/div/div/div/main/div/app-login/div/div[2]/form/button")).click();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		System.out.println("login as super admin executed successfully");
 		
 	}
