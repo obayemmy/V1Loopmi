@@ -23,7 +23,7 @@ public class CmmSanity {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		String actualUrl = driver.getCurrentUrl();
-		System.out.println("the current url is :" + actualUrl);
+		System.out.println("the ur  is :" + actualUrl);
 		System.out.println("launch browser and open url");
 	}
 	
