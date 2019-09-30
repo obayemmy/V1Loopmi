@@ -16,7 +16,7 @@ public class CmmSanity {
 	     WebDriver driver ; 
 	
 	@BeforeMethod
-	public void openBrowser() {
+	public void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver",  driverPath);
 		driver = new ChromeDriver();
 		driver.get("https://staging-loopmi.firebaseapp.com/account/login");
@@ -28,7 +28,7 @@ public class CmmSanity {
 	}
 	
 	@Test
-	public void VerifyPageTitle() {
+	public void verifyPageTitle() {
 		String title = driver.getTitle();
 		System.out.println("the page title is " + title);
 		Assert.assertEquals(title, "LoopmiWeb");
