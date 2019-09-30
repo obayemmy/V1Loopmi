@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LoginAsCM.CmmSanity">
+      <class name="LoginAsCM.newLogin">
         <methods>
-          <include name="closeBrowser"/>
           <include name="openBrowser"/>
-          <include name="login_As_Super_Admin"/>
+          <include name="validLogin"/>
+          <include name="closeBrowser"/>
+          <include name="invalidlogin"/>
+          <include name="createBulletin"/>
         </methods>
-      </class> <!-- LoginAsCM.CmmSanity -->
+      </class> <!-- LoginAsCM.newLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
